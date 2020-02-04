@@ -1,0 +1,224 @@
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix ui: <http://lv2plug.in/ns/extensions/ui#> .
+@prefix spod: <http://open-music-kontrollers.ch/lv2/synthpod#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo spod:stereo ,
+		spod:monoatom ;
+	rdfs:label "/home/ubuntu/NSM Sessions/synthpod/Synthpod-JACK.nIWBM" ;
+	state:state [
+		spod:visibility true ;
+		lv2:minorVersion "1"^^xsd:int ;
+		lv2:microVersion "6139"^^xsd:int ;
+		spod:moduleList [
+			<urn:uuid:9de5c356-e90f-4703-b44c-7fa5436df50a> [
+				a spod:source ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "78.0"^^xsd:float
+			] ;
+			<urn:uuid:93b9d9ba-4544-48bb-8130-e492b3fca450> [
+				a spod:sink ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "128.0"^^xsd:float
+			] ;
+			<urn:uuid:e167a7cb-76ae-4eea-ba4d-8f3dba84484e> [
+				a <http://open-music-kontrollers.ch/lv2/sherlock#osc_inspector> ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "178.0"^^xsd:float
+			] ;
+			<urn:uuid:3e210883-6560-4f66-9023-f9431f9d9400> [
+				a spod:osc_sink ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "228.0"^^xsd:float
+			] ;
+			<urn:uuid:043bcb7a-e999-44e3-a7f3-21a17769efb5> [
+				a spod:osc_source ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "278.0"^^xsd:float
+			] ;
+			<urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> [
+				a <http://github.com/blablack/ams-lv2/cvtocontrol> ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "376.54016113"^^xsd:float
+			] ;
+			<urn:uuid:ace9a0e9-07c2-4dbc-b8b7-8699d18c085c> [
+				a spod:cv_sink ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "426.54016113"^^xsd:float
+			] ;
+			<urn:uuid:b1f15e4b-d8b0-4a75-8c2f-1c010d3687b9> [
+				a spod:cv_source ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "476.54016113"^^xsd:float
+			] ;
+			<urn:uuid:1f28a326-eae0-4263-9769-fc68f504c5a6> [
+				a <http://moddevices.com/plugins/mod-devel/mod-cv-meter> ;
+				spod:modulePositionX "210.0"^^xsd:float ;
+				spod:modulePositionY "526.54016113"^^xsd:float
+			] ;
+			<urn:uuid:0f05c8d0-bb13-4288-89fe-08e459aecaf0> [
+				a <http://github.com/blablack/ams-lv2/cvtocontrol> ;
+				spod:modulePositionX "410.0"^^xsd:float ;
+				spod:modulePositionY "76.54014587"^^xsd:float
+			] ;
+			<urn:uuid:e1de8883-b1bf-4ba8-b10d-c503e277fcf1> [
+				a <http://gareus.org/oss/lv2/midimap> ;
+				spod:modulePositionX "410.0"^^xsd:float ;
+				spod:modulePositionY "126.54014587"^^xsd:float
+			] ;
+			<urn:uuid:7cc4c137-d7c4-4fa0-82c7-851b764f0b57> [
+				a <http://zynaddsubfx.sourceforge.net> ;
+				spod:modulePositionX "410.0"^^xsd:float ;
+				spod:modulePositionY "176.54014587"^^xsd:float
+			] ;
+			<urn:uuid:84a6056d-621e-410c-8ece-a5f2fcf7bbcc> [
+				a <http://open-music-kontrollers.ch/lv2/sherlock#midi_inspector> ;
+				spod:modulePositionX "410.0"^^xsd:float ;
+				spod:modulePositionY "226.54014587"^^xsd:float ;
+				ui:ui <http://open-music-kontrollers.ch/lv2/sherlock#midi_inspector_4_nk>
+			] ;
+			<urn:uuid:63e3b4c8-05d4-44aa-aad5-3e18ed18e371> [
+				a spod:midi_sink ;
+				spod:modulePositionX "410.0"^^xsd:float ;
+				spod:modulePositionY "376.54016113"^^xsd:float
+			] ;
+			<urn:uuid:bee8df21-0790-4dd5-9ed2-c75bca83272d> [
+				a spod:midi_source ;
+				spod:modulePositionX "410.0"^^xsd:float ;
+				spod:modulePositionY "426.54016113"^^xsd:float
+			]
+		] ;
+		spod:connectionList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					spod:sourceModule <urn:uuid:9de5c356-e90f-4703-b44c-7fa5436df50a> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:e167a7cb-76ae-4eea-ba4d-8f3dba84484e> ;
+					spod:sinkSymbol "control" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:b1f15e4b-d8b0-4a75-8c2f-1c010d3687b9> ;
+					spod:sourceSymbol "cv_source_1" ;
+					spod:sinkModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sinkSymbol "input" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:b1f15e4b-d8b0-4a75-8c2f-1c010d3687b9> ;
+					spod:sourceSymbol "cv_source_1" ;
+					spod:sinkModule <urn:uuid:1f28a326-eae0-4263-9769-fc68f504c5a6> ;
+					spod:sinkSymbol "CvInput" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:7cc4c137-d7c4-4fa0-82c7-851b764f0b57> ;
+					spod:sinkSymbol "lv2_events_in" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:84a6056d-621e-410c-8ece-a5f2fcf7bbcc> ;
+					spod:sinkSymbol "control" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:63e3b4c8-05d4-44aa-aad5-3e18ed18e371> ;
+					spod:sinkSymbol "midi_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:63e3b4c8-05d4-44aa-aad5-3e18ed18e371> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:bee8df21-0790-4dd5-9ed2-c75bca83272d> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				]
+			)
+		] ;
+		spod:nodeList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					spod:sourceModule <urn:uuid:9de5c356-e90f-4703-b44c-7fa5436df50a> ;
+					spod:sinkModule <urn:uuid:e167a7cb-76ae-4eea-ba4d-8f3dba84484e> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:b1f15e4b-d8b0-4a75-8c2f-1c010d3687b9> ;
+					spod:sinkModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:b1f15e4b-d8b0-4a75-8c2f-1c010d3687b9> ;
+					spod:sinkModule <urn:uuid:1f28a326-eae0-4263-9769-fc68f504c5a6> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sinkModule <urn:uuid:7cc4c137-d7c4-4fa0-82c7-851b764f0b57> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sinkModule <urn:uuid:84a6056d-621e-410c-8ece-a5f2fcf7bbcc> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					spod:sinkModule <urn:uuid:63e3b4c8-05d4-44aa-aad5-3e18ed18e371> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:63e3b4c8-05d4-44aa-aad5-3e18ed18e371> ;
+					spod:sinkModule <urn:uuid:bee8df21-0790-4dd5-9ed2-c75bca83272d> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				]
+			)
+		] ;
+		spod:automationList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:8b24e901-9ae6-42ce-9d9c-15a7b5de1a86> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "7"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled false ;
+					spod:sinkSymbol "output"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:7cc4c137-d7c4-4fa0-82c7-851b764f0b57> ;
+					midi:channel "-1"^^xsd:int ;
+					midi:controllerNumber "-1"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.0"^^xsd:double ;
+					spod:sourceEnabled false ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "slot1"
+				]
+			)
+		] ;
+		spod:graphPositionX "0.0"^^xsd:float ;
+		spod:graphPositionY "0.0"^^xsd:float ;
+		spod:columnEnabled true ;
+		spod:rowEnabled true
+	] .
+

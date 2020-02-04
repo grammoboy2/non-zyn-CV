@@ -1,0 +1,43 @@
+Tempo_Point 0x1 create :start 0 :tempo 120.000000
+Time_Point 0x2 create :start 0 :beats_per_bar 4 :beat_type 4
+{
+	Track 0x3 create :name "Audio" :sequence 0x0 :selected 0 :color 3806925568
+	Audio_Sequence 0x4 create :track 0x3 :name "Sun Feb  2 20:00:57 2020"
+}
+Control_Sequence 0x5 create :track 0x3 :name "Control" :color 2387684608
+Control_Point 0x6 create :start 28672 :sequence 0x5 :selected 0 :y 0.888889
+Control_Point 0x7 create :start 290816 :sequence 0x5 :selected 0 :y 0.240741
+Control_Point 0x8 create :start 1081344 :sequence 0x5 :selected 0 :y 0.796296
+Control_Point 0x9 create :start 1552384 :sequence 0x5 :selected 0 :y 0.092593
+Control_Point 0xA create :start 1847296 :sequence 0x5 :selected 0 :y 0.759259
+Control_Point 0xC create :start 2961408 :sequence 0x5 :selected 0 :y 0.185185
+Control_Point 0xD create :start 2965504 :sequence 0x5 :selected 0 :y 0.166667
+Control_Point 0xE create :start 3293184 :sequence 0x5 :selected 0 :y 0.648148
+Control_Point 0xF create :start 3690496 :sequence 0x5 :selected 0 :y 0.222222
+Control_Point 0x10 create :start 5066752 :sequence 0x5 :selected 0 :y 0.833333
+Control_Point 0x11 create :start 5246976 :sequence 0x5 :selected 0 :y 0.111111
+Control_Point 0x11 set :y 0.129630 << :y 0.111111
+{
+	Track 0x12 create :name "Audio.1" :sequence 0x0 :selected 0 :color 1361961472
+	Audio_Sequence 0x13 create :track 0x12 :name "Mon Feb  3 22:28:09 2020"
+}
+Control_Sequence 0x14 create :track 0x12 :name "Control" :color 1444908544
+Control_Point 0x15 create :start 69632 :sequence 0x14 :selected 0 :y 0.777778
+Control_Point 0x16 create :start 450560 :sequence 0x14 :selected 0 :y 0.203704
+Control_Point 0x16 set :start 441000 << :start 450560
+Control_Point 0x17 create :start 1433600 :sequence 0x14 :selected 0 :y 0.833333
+Control_Point 0x18 create :start 3592192 :sequence 0x14 :selected 0 :y 0.111111
+Control_Point 0x19 create :start 4935680 :sequence 0x14 :selected 0 :y 0.870370
+Control_Point 0x19 set :start 4939200 << :start 4935680
+{
+	Control_Point 0x15 destroy << :start 69632 :sequence 0x14 :selected 0 :y 0.777778
+	Control_Point 0x16 destroy << :start 441000 :sequence 0x14 :selected 0 :y 0.203704
+	Control_Point 0x17 destroy << :start 1411200 :sequence 0x14 :selected 0 :y 0.833333
+	Control_Point 0x18 destroy << :start 3616200 :sequence 0x14 :selected 0 :y 0.111111
+	Control_Point 0x19 destroy << :start 4939200 :sequence 0x14 :selected 0 :y 0.870370
+	Control_Sequence 0x14 destroy << :track 0x12 :name "Control" :color 1444908544
+}
+Control_Point 0x15 create :start 7696384 :sequence 0x5 :selected 0 :y 0.833333
+Control_Point 0x16 create :start 7831552 :sequence 0x5 :selected 0 :y 0.814815
+Control_Point 0x16 set :start 7849800 :y 0.851852 << :start 7831552 :y 0.814815
+Control_Point 0x17 create :start 8548352 :sequence 0x5 :selected 0 :y 0.240741

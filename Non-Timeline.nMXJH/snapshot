@@ -1,0 +1,20 @@
+{
+	Tempo_Point 0x1 create :start 0 :tempo 120.000000
+	Time_Point 0x2 create :start 0 :beats_per_bar 4 :beat_type 4
+	Track 0x3 create :name "Audio" :sequence 0x4 :selected 0 :color 3806925568
+	Control_Sequence 0x5 create :track 0x3 :name "Control" :color 2387684608
+	Control_Point 0x6 create :start 28672 :sequence 0x5 :selected 0 :y 0.888889
+	Control_Point 0x7 create :start 290816 :sequence 0x5 :selected 0 :y 0.240741
+	Control_Point 0x8 create :start 1081344 :sequence 0x5 :selected 0 :y 0.796296
+	Control_Point 0x9 create :start 1552384 :sequence 0x5 :selected 0 :y 0.092593
+	Control_Point 0xA create :start 1852200 :sequence 0x5 :selected 0 :y 0.777778
+	Control_Point 0xC create :start 2961408 :sequence 0x5 :selected 0 :y 0.185185
+	Control_Point 0xD create :start 2965504 :sequence 0x5 :selected 0 :y 0.166667
+	Control_Point 0xE create :start 3293184 :sequence 0x5 :selected 0 :y 0.648148
+	Control_Point 0xF create :start 3704400 :sequence 0x5 :selected 0 :y 0.222222
+	Control_Point 0x10 create :start 5027400 :sequence 0x5 :selected 0 :y 0.833333
+	Control_Point 0x11 create :start 5246976 :sequence 0x5 :selected 0 :y 0.129630
+	Audio_Sequence 0x4 create :track 0x3 :name "Sun Feb  2 20:00:57 2020"
+	Track 0x12 create :name "Audio.1" :sequence 0x13 :selected 0 :color 1361961472
+	Audio_Sequence 0x13 create :track 0x12 :name "Mon Feb  3 22:28:09 2020"
+}

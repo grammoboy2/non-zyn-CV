@@ -1,0 +1,13 @@
+Settings
+	Follow Playhead
+		true
+	Center Playhead
+		true
+	Snap to
+		Bars
+	Magnetic snap
+		true
+	Capture Format
+		Wav 24
+	Playback Latency Compensation
+		false

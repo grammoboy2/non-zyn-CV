@@ -1,0 +1,18 @@
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix ui: <http://lv2plug.in/ns/extensions/ui#> .
+@prefix spod: <http://open-music-kontrollers.ch/lv2/synthpod#> .
+
+<state.ttl>
+	a pset:Preset ;
+	lv2:appliesTo spod:stereo ,
+		spod:monoatom ;
+	rdfs:seeAlso <state.ttl> .
+
